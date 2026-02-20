@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Thomas-Preat.github.io/makerlab-relay",
+  "homepage": ".",
   "dependencies": {
     "@nhost/nhost-js": "^4.5.0",
     "@nhost/react": "^3.11.2",
