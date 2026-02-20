@@ -1,0 +1,54 @@
+/* Responsive CSS for nav-menu and general layout */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .site-header {
+        grid-template-columns: 1fr;
+        padding-top: 5.2rem;
+    }
+    .nav-menu {
+        flex-direction: column;
+        position: fixed;
+        top: 54px;
+        left: 0;
+        width: 101%;
+        display: none;
+        border: 1px solid;
+        border-color: rgb(103, 89, 112);
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu a {
+        padding: 1em;
+        font-size: 20px;
+        border-radius: 0;
+        background: var(--accent-transparent);
+        align-items: center;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    /* Admin button styling inside nav-menu */
+    .nav-menu .nav-admin {
+        display: flex;
+        justify-content: flex-end; /* push button to the right */
+        padding: 0.2em 1em;
+        font-size: 5px;
+        border-radius: 0;
+        background: var(--accent-transparent);
+    }
+
+    .nav-menu .nav-admin .admin-toggle {
+        margin-left: auto; /* ensures it stays on the far right */
+    }
+    
+    #admin-editor {
+        flex-direction: column; /* still vertical to keep things readable */
+        max-width: 350px;       /* optional smaller width on desktop */
+    }
+}
