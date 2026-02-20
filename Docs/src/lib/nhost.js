@@ -1,4 +1,4 @@
-import { createClient } from "@nhost/nhost-js";
+import { createClient } from "../../node_modules/@nhost/nhost-js/dist/src";
 
 export const nhost = createClient({
   subdomain: "dixqumruorjuqiurcfpz",
